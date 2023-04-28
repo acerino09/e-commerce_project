@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll Spy</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Ace Shop</title>	
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+</head>
+<style>
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+<body data-spy="scroll" data-target=".navbar">
+<div class="nav navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Ace Valley Shop</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+		   <li><a href="index.html">Home</a></li>  
+            <li class="active"><a href="realme.html">Realme Smartphones</a></li>	
+            <li><a href="oppo.html">Oppo Smartphones</a></li> 
+			<li><a href="vivo.html">Vivo Smartphones</a></li> 
+                    
+            <li><a href="#contact" data-toggle="modal">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="modal fade" id="contact" role="dialog">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<form class="form-horizontal" role="form">
+    				<div class="modal-header">
+    					<h4>Contact Us<h4>
+	    			</div>
+	    			<div class="modal-body">
+    					<div class="form-group">
+    						<label for="contact-name" class="col-sm-2 control-label">Name</label>
+    						<div class="col-sm-10">
+    							<input type="text" class="form-control" id="contact-name" placeholder="e.g., Ace Riño">
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="contact-email" class="col-sm-2 control-label">Email</label>
+    						<div class="col-sm-10">
+    							<input type="email" class="form-control" id="contact-email" placeholder="e.g., acerino09@gmail.com">
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="contact-message" class="col-sm-2 control-label">Message</label>
+    						<div class="col-sm-10">
+    							<textarea class="form-control" rows="4"></textarea>
+    						</div>
+    					</div>
+	    			</div>
+	    			<div class="modal-footer">
+    					<a class="btn btn-default" data-dismiss="modal">Close</a>
+    					<button type="submit" class="btn btn-primary">Send</button>
+    				</div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+	
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+	<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" style="background-size: cover">
+      <img src="images/wallpaper1.jpg" style="width:100%;">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item" style="background-size: cover">
+      <img src="images/wallpaper2.jpg" alt="..." style="width:100%;">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+	<div class="item" style="background-size: cover">
+      <img src="images/wallpaper3.jpg" alt="..." style="width:100%;">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item" style="background-size: cover">
+      <img src="images/wallpaper4.jpg" alt="..." style="width:100%;">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+	<div class="item" style="background-size: cover">
+      <img src="images/wallpaper5.jpg" alt="..." style="width:100%;">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+	<div class="item" style="background-size: cover">
+      <img src="images/wallpaper6.jpg" alt="..." style="width:100%;">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br/>
+<br/>
+<br/><br/>
+<div class="small-container">
+		<h2 class="title">Featured Products</h2><br>
+		<img class="powered" img src="images/realme (1).png" width="200px">
+		<div class="row">
+			<div class="col-4">
+				<a href="realme7.html"><img src="images/ealme7pro.jpg"></a>
+				<center><h4>realme 7 Pro</center></h4><br>
+				<center><p>65W Charging Evolution</center></p><br>
+				<center><p style="color:red">Php 15,990.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="realme8.html"><img src="images/realme8.png" ></a>
+				<center><h4>realme 8</center></h4><br>
+				<center><p>Capture Infinity
+</center></p><br>
+				<center><p style="color:red">Php 13,990.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="realme8pro.html"><img src="images/realme8pro.png" ></a>
+				<center><h4>realme 8 Pro</center></h4><br>
+				<center><p>108MP. Capture Infinity</center></p><br>
+				<center><p style="color:red">Php  16,990.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="realme85g.html"><img src="images/realme85g.png"></a>
+				<center><h4>realme 8 5G</center></h4><br>
+				<center><p>Speed of Infinity</center></p><br>
+				<center><p style="color:red">Php 11,990.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="realmenarzo.html"><img src="images/narzo.jpg"></a>
+				<center><h4>realme narzo 20</center></h4><br>
+				<center><p>Feel the Power</center></p><br>
+				<center><p style="color:red">Php 7,990.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="realme6pro.html"><img src="images/realme6pro.jpg"></a>
+				<center><h4>realme 6 Pro</center></h4><br>
+				<center><p>6 Cameras Pro Display</center></p><br>
+				<center><p style="color:red">Php 13,990.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="realme6.html"><img src="images/realme6.jpg"></a>
+				<center><h4>realme6</center></h4><br>
+				<center><p>64 Pro Camera Display</center></p><br>
+				<center><p style="color:red">Php 8,990.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="realmec25.html"><img src="images/realmec25.png"></a>
+				<center><h4>realme c25</center></h4><br>
+				<center><p>Gaming Processor</center></p><br>
+				<center><p style="color:red">Php 7,490.00</center></p>
+				
+			</div>
+	</div>
+	</div>
+	
+	
+	
+	
+	
+</body>	
+</html>
+	
+		

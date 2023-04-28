@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll Spy</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Ace Shop</title>	
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+</head>
+<style>
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+<body data-spy="scroll" data-target=".navbar">
+<div class="nav navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Ace Valley Shop</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+		   <li><a href="index.html">Home</a></li>  
+            <li ><a href="realme.html">Realme Smartphones</a></li>	
+            <li><a href="oppo.html">Oppo Smartphones</a></li> 
+			<li class="active"><a href="vivo.html">Vivo Smartphones</a></li> 
+                    
+            <li><a href="#contact" data-toggle="modal">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="modal fade" id="contact" role="dialog">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<form class="form-horizontal" role="form">
+    				<div class="modal-header">
+    					<h4>Contact Us<h4>
+	    			</div>
+	    			<div class="modal-body">
+    					<div class="form-group">
+    						<label for="contact-name" class="col-sm-2 control-label">Name</label>
+    						<div class="col-sm-10">
+    							<input type="text" class="form-control" id="contact-name" placeholder="e.g., Ace Riño">
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="contact-email" class="col-sm-2 control-label">Email</label>
+    						<div class="col-sm-10">
+    							<input type="email" class="form-control" id="contact-email" placeholder="e.g., acerino09@gmail.com">
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="contact-message" class="col-sm-2 control-label">Message</label>
+    						<div class="col-sm-10">
+    							<textarea class="form-control" rows="4"></textarea>
+    						</div>
+    					</div>
+	    			</div>
+	    			<div class="modal-footer">
+    					<a class="btn btn-default" data-dismiss="modal">Close</a>
+    					<button type="submit" class="btn btn-primary">Send</button>
+    				</div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+	<br><br><br><br><br>
+	
+	<div class="small-container single-product">
+			<div class="row">
+				<div class="col-2">
+					<img src="images/sample8.png" width="100%">
+					
+					
+				</div>
+				<div class="col-2">
+					<h4>Home | VIVO</h4>
+					<h1>VIVO V20 SE</h1>
+					<h4 >Php 13,999.00</h4>
+					<select>
+						<option>Select Color</option>
+						<option>Midnight Black</option>
+						<option>Blue</option>
+					</select><br>
+					<input type="number" value="1"></input>
+					
+					<div class="modal fade" id="contact" role="dialog">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<form class="form-horizontal" role="form">
+    				<div class="modal-header">
+    					<h4>Contact Us<h4>
+	    			</div>
+	    			<div class="modal-body">
+    					<div class="form-group">
+    						<label for="contact-name" class="col-sm-2 control-label">Name</label>
+    						<div class="col-sm-10">
+    							<input type="text" class="form-control" id="contact-name" placeholder="e.g., Ace Riño">
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="contact-email" class="col-sm-2 control-label">Email</label>
+    						<div class="col-sm-10">
+    							<input type="email" class="form-control" id="contact-email" placeholder="e.g., acerino09@gmail.com">
+    						</div>
+    					</div>
+    					<div class="form-group">
+    						<label for="contact-message" class="col-sm-2 control-label">Message</label>
+    						<div class="col-sm-10">
+    							<textarea class="form-control" rows="4"></textarea>
+    						</div>
+    					</div>
+	    			</div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+
+
+					<h3>Product Details</h3>
+					<p>65W SuperDart Charge 0-100% in 34mins | Super AMOLED Fullscreen 16.3cm (6.4”) FHD+ Fullscreen
+					| 32MP In-display Selfie Supporting Nightscape | Sony 64MP Quad Camera Clearer, Sharper, More Functions</p>
+				</div>
+			</div>
+	  </div><br><br><br>
+	  <div class="small-container">
+		<div class="row row-2">
+			<h2 class="title">Related Products</h2><br>
+		
+		
+		</div>
+	  </div>
+	  
+	  <div class="small-container">
+		<div class="row">
+			<div class="col-4">
+				<a href="vivov20.html"><img src="images/sample5.jpg" ></a><br><br>
+				<center><h4>VIVO V20 Pro</center></h4><br>
+				<center><p>Thinnest 5G Smartphone</center></p><br>
+				<center><p style="color:red">Php 24,999.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="vivox50.html"><img src="images/sample6.jpg" ></a><br><br>
+				<center><h4>VIVO X50 Pro</center></h4><br>
+				<center><p>Gimbal Stabilization</center></p><br>
+				<center><p style="color:red">Php 31,499.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="vivoy31.html"><img src="images/sample7.png" ></a><br><br>
+				<center><h4>VIVO Y31</center></h4><br>
+				<center><p>QSD 6 Series
+</center></p><br>
+				<center><p style="color:red">Php 12,999.00</center></p>
+				
+			</div>
+			<div class="col-4">
+				<a href="vivov20se.html"><img src="images/sample8.png"></a><br><br>
+				<center><h4>VIVO V20 SE</center></h4><br>
+				<center><p>Magical Color Scheme
+</center></p><br>
+				<center><p style="color:red">Php 13,999.00</center></p>
+				
+			</div>
+			
+	</div>
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+	
+</body>	
+</html>
+	
+		
